@@ -1,4 +1,5 @@
 import React from 'react';
+import 'typeface-roboto';
 
 export default class CreatePage extends React.Component {
   constructor(props) {

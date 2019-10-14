@@ -12,6 +12,7 @@ import * as serviceWorker from './serviceWorker';
 
 import { Router } from 'react-router-dom';
 import { createMemoryHistory, createBrowserHistory } from 'history';
+import CssBaseline from '@material-ui/core/CssBaseline';
 const history = createBrowserHistory();
 
 // create connection to GraphQL API server
@@ -27,6 +28,7 @@ const client = new ApolloClient({
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Router history={history}>
+      <CssBaseline />
       <App />
     </Router>
   </ApolloProvider>,
